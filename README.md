@@ -34,8 +34,8 @@ go run main.go
 #### [HaveIBeenPwned](https://haveibeenpwned.com/)
 
 
-Group Roles: 
-### Ajay Shah:
+## Group Roles: 
+### [Ajay Shah:](https://github.com/ajay340)
 - Lead developer. Most familiar with GoLang, a strong resource for github and all GoLang coding to other roles. Group Leader and coordinated other jobs. 
 - Created system design architecture and modified throughout and maintained integrity of our model through evolving changes in project.
 - Emphasis on Test Driven Development, Github Actions, and addressing supplemental issues.
@@ -46,12 +46,12 @@ Group Roles:
 - CI/CD configuration manager
 - Backend and Web Framework Engineer. Utilizing the Echo framework
 - Authentication Engineer
-### Eric Gargiulo:
+### [Eric Gargiulo:](https://github.com/gargiuer)
 - PDF generation engineer
 - Testing and Quality Assurance engineer
 - Add populator from Wikipedia and HaveIBeenPwned
 
-### Harshal Patel:
+### [Harshal Patel:](https://github.com/hargadpatel)
 - Cleaned and modified original kaggle data.
 - Created and implemented all UI/UX design elements: 
     - Functional Navigation with Search, User, Logout. 
