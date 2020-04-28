@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/login.css">
+    <link rel="icon" href='/static/images/favicon.ico' type='image/x-icon' />
+
+
+<body>
+    <div class="loginbox">
+        <img src="/static/images/avatar.png" class="avatar">
+        <h1>Login Here
+            <center><br>{{index . "Error_MSG"}}</center>
+        </h1>
+        <form action="/login" method="post">
+            <p>Username</p>
+            <input type="text" id="username" name="username"><br>
+            <p>Password</p>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" name="" value="Login">
+            <a href="/register">Don't have an account?</a>
+        </form>
+    </div>
+</body>
+
+</head>
+
+</html>

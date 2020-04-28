@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/static/css/about.css">
+  <link rel="icon" href='/static/images/favicon.ico' type='image/x-icon' />
+
+
+</head>
+
+<body onload="inPlaceSearch()">
+  <nav class="navbar navbar-light bg-light justify-content-between">
+    <a class="navbar-brand" href="/">SearchBreaches.me</a>
+    <form pattern="[a-zA-Z ]+" class="form-inline mr-sm-2"
+      onsubmit="window.location.href = '/search='+document.getElementById('wiki-search-input').value" method="get"
+      class="wiki-search-form" style="float: right">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search a breach" class="wiki-search-input"
+        id="wiki-search-input">
+      <button style="margin:5px" class="button btn btn-outline-success my-2 my-sm-0"
+        onclick="window.location.href = '/search='+document.getElementById('wiki-search-input').value">Search</button>
+      <a href="/logout" button style="margin:5px" class="btn btn-outline-danger"><i class="fa fa-sign-out">Sign
+          Out</i></button></a>
+    </form>
+    </div>
+  </nav>
+  </div>
+
+  <div class="about-section">
+    <h1>About Us</h1>
+    <p>The Team Behind: SearchBreaches.me</p>
+    <h6>View the source code <a href="https://github.com/ajay340/SearchBreaches.me">here</a>
+  </div>
+  <h2 style="text-align:center">Our Team</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="/static/images/harshal.jpg" alt="Harshal" style="width:100%">
+        <div class="container">
+          <h2>Harshal Patel</h2>
+          <p class="title">Frontend Development</p>
+          <p>Seton Hall Univeristy Graduate - Computer Science with a minor in Data Analytics and Visualization.</p>
+          <p>Harshal.Patel@student.shu.edu</p>
+          <a href="mailto:Harshal.Patel@student.shu.edu?subject=your title&body=TThe message">
+            <button id="btnOutlook">Contact</button>
+          </a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="/static/images/ajay.jpg" alt="Ajay" style="width:100%">
+        <div class="container">
+          <h2>Ajay Shah</h2>
+          <p class="title">Lead Programmer - Backend Development</p>
+          <p>Seton Hall University - Computer Science graduate with a keen interest in backend software security.</p>
+          <p>Ajay.Shah@student.shu.edu</p>
+          <p>
+            <a href="mailto:Ajay.Shah@student.shu.edu?subject=your title&body=TThe message">
+              <button id="btnOutlook">Contact</button>
+            </a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="/static/images/eric.jpg" alt="Eric" style="width:100%">
+        <div class="container">
+          <h2>Eric Gargiulo</h2>
+          <p class="title">API Management - QA Tester</p>
+          <p>Seton Hall University - Computer Science Student with a thirst for knowledge interested in API Devleopment.</p>
+          <p>Eric.Gargiulo@student.shu.edu</p>
+          <a href="mailto:Eric.Gargiulo@student.shu.edu?subject=your title&body=TThe message">
+            <button id="btnOutlook">Contact</button>
+          </a></p>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,152 @@
+{{define "index.html"}}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>SearchBreaches.me</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css'>
+  <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/static/css/index.css">
+  <link rel="icon" href='/static/images/favicon.ico' type='image/x-icon' />
+
+  <script>
+    window.console = window.console || function (t) { };
+  </script>
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .row1:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body translate="no">
+  <div class="main">
+    <nav class="navbar navbar-light bg-light"> <a class="navbar-brand" href="/">SearchBreaches.me</a>
+      <ul class="navbar-nav mr-auto"></ul>
+      <a href="/user">
+        <button class="btn"><i class="fa fa-user" icon-2x></i>
+          <font size="4">:{{index . "username"}}</font>
+        </button>
+      </a>
+      <a href="/logout">
+        <button class="btn btn-outline-danger"><i class="fa fa-sign-out"> Sign Out</i></button>
+      </a>
+      </form>
+  </div>
+  </nav>
+  </div>
+  <div class="home">
+    <div class="container">
+      <div class="row">
+        <div class="eight columns offset-by-two">
+          <h1 class="headline">SearchBreaches.me</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="eight columns offset-by-two">
+          <form pattern="[a-zA-Z ]+" autocomplete="off"
+            onsubmit="window.location.href = '/search='+document.getElementById('searchBox').value" method="get"
+            class="wiki-search-form">
+            <input type="text" placeholder="Search a breach" class="search-field" id="searchBox">
+            <ul id="searchResults" class="term-list hidden"></ul>
+          </form>
+          <button class="button btn btn-outline-success my-2 my-sm-0"
+            onclick="window.location.href = '/search='+document.getElementById('searchBox').value">Search</button>
+          <div class="row">
+            <div class="eight columns offset-by-two">
+            </div>
+            <div class="container">
+              <div class="row mt-5">
+                <div class="row mt-5">
+                  <h4>Here Are Some Popularly Searched Terms: </h4>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <button class="button btn-success btn-wiki"
+                  onclick="window.location.href = '/search='+'hospital'">Hospital</button> &nbsp;<br><br /> <br />
+                <button class="button btn-success btn-wiki"
+                  onclick="window.location.href = '/search='+'hacking'">Hacking</button> &nbsp;<br><br /> <br />
+                <button class="button btn-success btn-wiki"
+                  onclick="window.location.href = '/search='+'Insurance'">Insurance</button> &nbsp;<br><br /> <br />
+                <button class="button btn-success btn-wiki"
+                  onclick="window.location.href = '/search='+'University'">University</button> &nbsp;<br><br /> <br />
+                <button class="button btn-success btn-wiki"
+                  onclick="window.location.href = '/search='+'Government'">Government</button> &nbsp;<br><br /> <br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="eight columns offset-by-two">
+
+        <style>
+          .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            color: black;
+            text-align: center;
+          }
+        </style>
+
+        <div class="footer">
+          <p>
+            <h6><a href="/about">About the Authors</a> and <a
+                href="https://github.com/ajay340/SearchBreaches.me">View Our Source Code</a>
+            </h6>
+          </p>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script>
+    $(function () {
+      $("form").submit(function () { return false; });
+    });
+  </script>
+  <script src="/static/js/getBreachSearch.js"></script>
+</body>
+
+</html>
+{{end}}

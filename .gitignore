@@ -1,0 +1,7 @@
+.idea/
+.github/
+.vscode/
+Breaches_Listings/target/
+src/gin-bin.exe
+src/database/db/config.json
+src/database/db/breaches.db.bk

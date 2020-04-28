@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/static/css/error.css">
+  <link rel="icon" href='/static/images/favicon.ico' type='image/x-icon' />
+
+  <title>Error 501</title>
+</head>
+
+<body onload="inPlaceSearch()">
+  <nav class="navbar navbar-light bg-light justify-content-between">
+    <a class="navbar-brand" href="/">SearchBreaches.me</a>
+    <form pattern="[a-zA-Z ]+" class="form-inline mr-sm-2"
+      onsubmit="window.location.href = '/search='+document.getElementById('wiki-search-input').value" method="get"
+      class="wiki-search-form" style="float: right">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search a breach" class="wiki-search-input"
+        id="wiki-search-input">
+      <button style="margin:5px" class="button btn btn-outline-success my-2 my-sm-0"
+        onclick="window.location.href = '/search='+document.getElementById('wiki-search-input').value">Search</button>
+      <a href="/logout" button style="margin:5px" class="btn btn-outline-danger"><i class="fa fa-sign-out">Sign
+          Out</i></button></a>
+    </form>
+    </div>
+  </nav>
+  </div>
+  <div class="container mt-5">
+  </div>
+  <br>
+  <div class="container">
+    <div class="col-md-6">
+      <div class="row">
+        <h1>Error 501</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+  </div>
+  <div class="container mt-5">
+  </div>
+  <div class="container mt-5">
+  </div>
+
+  <div>
+    <div class="container mt=200">
+      <h4 align=center>The Webserver cannot recognize the request method.</h4>
+      <div class="col-md-6">
+        <div class="row">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $("form").submit(function () { return false; });
+    });
+  </script>
+
+</body>
+
+</html>

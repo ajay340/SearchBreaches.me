@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href='/static/images/favicon.ico' type='image/x-icon' />
+  <title>:{{index . "username"}}</title>
+</head>
+
+<body onload="inPlaceSearch()">
+  <nav class="navbar navbar-light bg-light justify-content-between">
+    <a class="navbar-brand" href="/">SearchBreaches.me</a>
+    <form pattern="[a-zA-Z ]+" class="form-inline mr-sm-2"
+      onsubmit="window.location.href = '/search='+document.getElementById('wiki-search-input').value" method="get"
+      class="wiki-search-form" style="float: right">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search a breach" class="wiki-search-input"
+        id="wiki-search-input">
+      <button style="margin:5px" class="button btn btn-outline-success my-2 my-sm-0"
+        onclick="window.location.href = '/search='+document.getElementById('wiki-search-input').value">Search</button>
+      <a href="/logout" button style="margin:5px" class="btn btn-outline-danger"><i class="fa fa-sign-out">Sign
+          Out</i></button></a>
+    </form>
+    </div>
+  </nav>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12"> HOME &GT :{{index . "username"}} 's Settings</div>
+    </div>
+  </div>
+  <br></br>
+
+  <head>
+    <title>Change Password</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/register.css">
+
+  <body>
+    <div class="loginbox">
+      <img src="/static/images/avatar.png" class="avatar">
+      <h1>Change Your Password<br>{{index . "Error_MSG"}}</h1>
+      <form action="/user" method="post">
+        <p>Current Password</p>
+        <input type="password" id="password" name="password" autocomplete="off"><br>
+        <p>New Password</p>
+        <input type="password" id="newpassword1" name="newpassword1" autocomplete="off"><br><br>
+        <p>Confirm New Password</p>
+        <input type="password" id="newpassword2" name="newpassword2" autocomplete="off"><br><br>
+        <input type="submit" name="" value="Change Password">
+      </form>
+    </div>
+  </body>
+
+  </head>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/register.css">
+    <link rel="icon" href='/static/images/favicon.ico' type='image/x-icon' />
+
+
+<body>
+    <div class="loginbox">
+        <img src="/static/images/avatar.png" class="avatar">
+        <h1>Register For The Site <br>{{index . "Error_MSG"}}</h1>
+        <form action="/register" method="post">
+            <p>Username</p>
+            <input type="text" id="username" name="username"><br>
+            <p>Password</p>
+            <input type="password" id="password" name="password"><br><br>
+            <p>Confirm Password</p>
+            <input type="password" id="password1" name="password1"><br><br>
+            <input type="submit" name="" value="Register">
+            <a href="/login">Already have an account?</a>
+        </form>
+    </div>
+</body>
+
+</head>
+
+</html>
