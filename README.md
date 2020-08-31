@@ -1,4 +1,4 @@
-# [SearchBreaches.me](https://searchbreaches.me)
+# SearchBreaches.me
 
 <p align="center">
     <img src="https://img.shields.io/badge/Made%20with-Golang-blue.svg?logo=Go" />
