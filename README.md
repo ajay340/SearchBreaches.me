@@ -4,6 +4,7 @@
     <img src="https://img.shields.io/badge/Made%20with-Golang-blue.svg?logo=Go" />
     <img src="https://img.shields.io/badge/Database-Postgres-blue.svg?logo=postgresql" />
     <img src="https://img.shields.io/badge/Using-AWS-orange.svg?logo=amazon" />
+    <img src="https://goreportcard.com/badge/github.com/ajay340/SearchBreaches.me" />
     <br>
     Created by Ajay Shah, Harshal Patel, and Eric Gargiulo
     <br>
